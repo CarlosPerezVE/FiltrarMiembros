@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar CSV</title>
+</head>
+<body>
+    <h1>Filtrar Usuarios por Nivel</h1>
+    <form id="csvForm">
+        <label for="csvFile">Subir archivo CSV:</label>
+        <input type="file" id="csvFile" accept=".csv" required><br><br>
+
+        <label for="levelSelect">Seleccionar nivel:</label>
+        <select id="levelSelect" required>
+            <option value="" disabled selected>Selecciona un nivel</option>
+        </select><br><br>
+
+        <button type="submit">Generar TXT</button>
+    </form>
+
+    <a id="downloadLink" style="display: none;">Descargar archivo</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
